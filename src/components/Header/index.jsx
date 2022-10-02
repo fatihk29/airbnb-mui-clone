@@ -9,7 +9,7 @@ import {
 import LocationSearch from "../LocationSearch";
 import Logo from "../Logo";
 import ProfileSettings from "components/ProfileSettings";
-import MobileSearch from "components/MobielSearch";
+import MobileSearch from "components/MobileSearch";
 
 const Header = () => {
   return (

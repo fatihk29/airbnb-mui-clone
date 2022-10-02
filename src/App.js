@@ -3,6 +3,8 @@ import Header from "components/Header";
 import OptionsTab from "components/OptionsTab";
 import LocationCard from "components/LocationCard";
 import { displayOnDesktop } from "themes/commonStyles";
+import Footer from "components/Footer";
+import FooterMenu from "components/Footer/FooterMenu";
 
 function App() {
   return (
@@ -26,17 +28,19 @@ function App() {
             <LocationCard />
             <Box
               sx={{
-                display: { xs: "flex", md: "none" },
+                display: { xs: "block", md: "none" },
               }}
             >
               {/* <MobileFooter /> */}
             </Box>
           </Container>
         </Box>
-        <Box sx={{ display: { xs: "flex", md: "none" } }}>
-          {/* <FooterMenu /> */}
+        <Box sx={{ display: { xs: "block", md: "none" } }}>
+          <FooterMenu />
         </Box>
-        <Box sx={displayOnDesktop}>{/* <Footer /> */}</Box>
+        <Box sx={displayOnDesktop}>
+          <Footer />
+        </Box>
       </Box>
     </>
   );
