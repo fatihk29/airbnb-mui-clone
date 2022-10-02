@@ -28,6 +28,42 @@ const theme = createTheme({
         textTransform: "capitalize",
       },
     },
+    MuiStack: {
+      defaultProps: {
+        sx: {
+          px: 2,
+          py: 1,
+        },
+        spacing: 1,
+        direction: "row",
+      },
+    },
+    MuiPaper: {
+      defaultProps: {
+        elevation: 0,
+      },
+    },
+    MuiLink: {
+      defaultProps: {
+        sx: {
+          color: (theme) => theme.palette.primary.main,
+        },
+        underline: "none",
+      },
+    },
+    MuiButton: {
+      defaultProps: {
+        size: "small",
+        p: 0,
+        disableRipple: true,
+      },
+      variant: "text",
+    },
+    MuiTab: {
+      defaultProps: {
+        disableRipple: true,
+      },
+    },
   },
 });
 
